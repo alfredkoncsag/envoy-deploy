@@ -6,6 +6,8 @@ This repository includes an Envoy.blade.php script that is designed to provide a
 
 This Envoy script is designed to be used with Laravel 7 projects and can be used within the Laravel root, or downloaded separately and included in your Laravel project.
 
+## Setup
+
 ### Config
 
 Envoy Deploy uses [DotEnv](https://github.com/vlucas/phpdotenv) to fetch your server and repository details. If you are installing within a Laravel project, there will already be a `.env` file in the root, otherwise simply create one.

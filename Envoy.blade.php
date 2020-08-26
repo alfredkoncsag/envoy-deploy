@@ -125,7 +125,7 @@
 
 @task('deployment_option_cleanup')
 	cd {{ $path }}
-	@if ( isset($cleanup) && $cleanup )
+	@if (isset($cleanup) && $cleanup)
 		find . -maxdepth 1 -name "20*" | sort | head -n -4 | xargs rm -Rf
 		echo "Cleaned up old deployments"
 	@endif
@@ -133,7 +133,7 @@
 
 
 @task('health_check')
-	@if ( ! empty($healthUrl) )
+	@if (!empty($healthUrl) )
 		if [ "$(curl --write-out "%{http_code}\n" --silent --output /dev/null {{ $healthUrl }})" == "200" ]; then
 			printf "\033[0;32mHealth check to {{ $healthUrl }} OK\033[0m\n"
 		else
