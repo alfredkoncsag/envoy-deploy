@@ -6,13 +6,6 @@ This repository includes an Envoy.blade.php script that is designed to provide a
 
 This Envoy script is designed to be used with Laravel 7 projects and can be used within the Laravel root, or downloaded separately and included in your Laravel project.
 
-## Installation
-
-Your must have Envoy installed using the Composer global command:
-
-	composer global require "laravel/envoy"
-
-
 ## Setup
 
 ### Config
